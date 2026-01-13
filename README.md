@@ -1,3 +1,5 @@
+Projeto feito como trabalho de conclusão de curso, feito em dupla.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
