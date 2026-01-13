@@ -1,0 +1,46 @@
+/* 1. Importa todas as funcionalidades do Tailwind */
+@import "tailwindcss";
+
+/* 2. Camada base (opcional, mas bom para resets) */
+@layer base {
+  * {
+    /* Seu CSS global, como o scroll-behavior */
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#f0f3fd]; /* Usando uma cor do seu projeto original */
+  }
+}
+
+/* 3. Camada de componentes (para classes customizadas) */
+@layer components {
+  /* Exemplo: recriando a classe 'destaque' do seu CSS antigo */
+  .destaque {
+    @apply text-red-600;
+  }
+}
+
+/* 4. Estendendo o tema do Tailwind (o novo "tailwind.config.js") */
+@theme {
+  /* Estendendo a paleta de cores */
+  --color-primary: #dc2626; /* Exemplo de cor primária (vermelho) */
+
+  /* Estendendo a família de fontes (já configurado, mas como exemplo) */
+  --font-family-sans: "Poppins", sans-serif;
+
+  /* Estendendo com a imagem de fundo do seu projeto original */
+  --background-image-home: url("/assets/bg.png");
+
+  /* Estendendo animações */
+  --animation-fadeIn: fadeIn 0.5s ease-in-out;
+
+  /* Definindo keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
